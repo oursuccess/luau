@@ -5,7 +5,7 @@
 
 // Can be used to reconfigure visibility/exports for public APIs
 #ifndef LUACODE_API
-#define LUACODE_API extern
+#define LUACODE_API extern "C" __declspec(dllexport)
 #endif
 
 typedef struct lua_CompileOptions lua_CompileOptions;
